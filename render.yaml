@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: starter
+    branch: master
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: yourusername
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: yourstrongpassword
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: "10000"
+      - key: WEBHOOK_URL
+        value: https://n8n-yourname.onrender.com/
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-yourname.onrender.com/
+      - key: N8N_PROTOCOL
+        value: https
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
