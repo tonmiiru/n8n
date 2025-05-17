@@ -9,17 +9,17 @@ services:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
-        value: yourusername
+        value: ton
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: yourstrongpassword
+        value: 123ton123
       - key: N8N_HOST
         value: 0.0.0.0
       - key: N8N_PORT
         value: "10000"
       - key: WEBHOOK_URL
-        value: https://n8n-yourname.onrender.com/
+        value: https://n8n-nxzy.onrender.com
       - key: N8N_EDITOR_BASE_URL
-        value: https://n8n-yourname.onrender.com/
+        value: https://n8n-nxzy.onrender.com
       - key: N8N_PROTOCOL
         value: https
     disk:
