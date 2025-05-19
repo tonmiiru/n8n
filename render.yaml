@@ -17,9 +17,9 @@ services:
       - key: N8N_PORT
         value: "5678"
       - key: WEBHOOK_URL
-        value: https://n8n-1-fyf6.onrender.com
+        value: https://n8n-qqko.onrender.com
       - key: N8N_EDITOR_BASE_URL
-        value: https://n8n-1-fyf6.onrender.com
+        value: https://n8n-qqko.onrender.com
       - key: N8N_PROTOCOL
         value: https
 
@@ -27,14 +27,14 @@ services:
       - key: DB_TYPE
         value: postgres
       - key: DB_POSTGRESDB_HOST
-        value: dpg-d0la1iggjchc73etbusg-a
+        value: dpg-d0la9kffte5s739audbg-a
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
-        value: n8ndb_40bs
+        value: n8ndb_3v2j
       - key: DB_POSTGRESDB_USER
-        value: n8ndb_40bs_user
+        value: ton
       - key: DB_POSTGRESDB_PASSWORD
-        value: abkZrnH9qfpQKYeNkjlHrBSUmfrOZjUt
+        value: 7TvjvhwYNrNcuLEs06i34IfPcUyHuAaw
       - key: DB_POSTGRESDB_SCHEMA
         value: public
