@@ -26,9 +26,9 @@ services:
         value: 9f86d081884c7d659a2feaa0c55ad015
       - key: DB_TYPE
         value: sqlite
-    disk:
-      name: n8n
-      mountPath: /home/node/.n8n
+    disks:
+      - name: n8n
+        mountPath: /home/node/.n8n
 
 disks:
   - name: n8n
