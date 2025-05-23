@@ -24,19 +24,9 @@ services:
         value: https
       - key: N8N_ENCRYPTION_KEY
         value: 9f86d081884c7d659a2feaa0c55ad015
-
-      # PostgreSQL config
       - key: DB_TYPE
-        value: postgres
-      - key: DB_POSTGRESDB_HOST
-        value: dpg-d0la9kffte5s739audbg-a
-      - key: DB_POSTGRESDB_PORT
-        value: "5432"
-      - key: DB_POSTGRESDB_DATABASE
-        value: n8ndb_3v2j
-      - key: DB_POSTGRESDB_USER
-        value: ton
-      - key: DB_POSTGRESDB_PASSWORD
-        value: 7TvjvhwYNrNcuLEs06i34IfPcUyHuAaw
-      - key: DB_POSTGRESDB_SCHEMA
-        value: public
+        value: sqlite
+    disks:
+      - name: n8n-data
+        mountPath: /home/node/.n8n
+        sizeGB: 1
