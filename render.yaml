@@ -1,10 +1,11 @@
 services:
   - type: web
     name: n8n
-    env: docker
+    runtime: docker          # ← was `env: docker`
     plan: starter
     branch: master
     dockerfilePath: ./Dockerfile
+
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
@@ -25,11 +26,9 @@ services:
       - key: N8N_ENCRYPTION_KEY
         value: 9f86d081884c7d659a2feaa0c55ad015
       - key: DB_TYPE
-        value: sqlite
-    disks:
-      - name: n8n
-        mountPath: /home/node/.n8n
+        value: sqlite            # switched from Postgres
 
-disks:
-  - name: n8n
-    sizeGB: 1
+    disk:
+      name: n8n-data             # choose any unique name
+      mountPath: /home/node/.n8n # where n8n stores its SQLite file
+      sizeGB: 1                  # 1 GB is plenty for workflows
