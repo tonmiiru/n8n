@@ -31,5 +31,5 @@ services:
       mountPath: /home/node/.n8n
 
 disks:
-  - name: n8n-data
+  - name: n8n
     sizeGB: 1
