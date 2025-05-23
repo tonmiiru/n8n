@@ -22,8 +22,7 @@ services:
         value: https://n8n-qqko.onrender.com
       - key: N8N_PROTOCOL
         value: https
-			- key: N8N_ENCRYPTION_KEY
-  			value: 9f86d081884c7d659a2feaa0c55ad015
+
 
 
 
