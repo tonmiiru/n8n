@@ -27,7 +27,7 @@ services:
       - key: DB_TYPE
         value: sqlite
     disk:
-      name: n8n-data
+      name: n8n
       mountPath: /home/node/.n8n
 
 disks:
