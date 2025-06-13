@@ -1,4 +1,3 @@
-Dockerfile
 FROM n8nio/n8n:latest
 
 # keep Node inside 512 MB so the free plan doesn’t OOM
